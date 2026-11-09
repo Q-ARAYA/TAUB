@@ -1,0 +1,94 @@
+/* Romantic finish with a little more light. Motion, photos and themes live in style.css. */
+:root{--ink:#67434c;--rose:#a64d67;--muted:#916e79;--paper:#fffdf9;--pink:#faedef;--gold:#ba975c;background:#faedef;color-scheme:light}
+body{background:#faedef;line-height:1.5;-webkit-font-smoothing:antialiased}
+#theme-backdrop,.modal-theme-backdrop{background:radial-gradient(ellipse at 0% 15%,var(--theme-wash),transparent 57%),radial-gradient(ellipse at 100% 85%,var(--theme-glow),transparent 58%),linear-gradient(145deg,#fffaf6 12%,#f9e9ee 85%)}
+.paper-grain{opacity:.09}
+header{max-width:1000px;padding:calc(22px + env(safe-area-inset-top)) 24px 18px;gap:16px}
+.brand{font:400 30px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:0;background:transparent;border:0;border-radius:0;padding:6px 0;box-shadow:none}
+.brand span{font-style:italic}
+.header-note{font-size:9px;letter-spacing:1.4px;font-weight:600;color:#837180}
+main{max-width:640px;padding:14px 20px 0}
+#daily,#collection{padding:22px 18px 20px;background:transparent;border:0;border-radius:0;box-shadow:none}
+.eyebrow{display:inline-block;font-size:9px;letter-spacing:2px;color:var(--rose);background:none;border:0;padding:0;margin:0 0 22px}
+h1{font:500 clamp(38px,9vw,49px)/1.08 'Cormorant Garamond',Georgia,serif;letter-spacing:-1.1px}
+h1 em{display:inline-block;font-weight:400;font-size:1em;line-height:1.1;letter-spacing:-.5px;color:var(--rose)}
+.intro{font-size:13px;line-height:1.8;color:var(--muted);margin-top:17px}
+.card-stage{margin:28px auto 24px;max-width:318px}
+.love-card{border:1px solid #ede5ec;border-radius:17px;box-shadow:0 18px 40px #9c65751c,0 3px 7px #8f5b6810;background:var(--paper)}
+.love-card:before{inset:11px;border-color:#f2e9ef;border-radius:16px}
+.card-face{padding:27px 22px;border-radius:inherit}
+.card-number{color:#9a7f90;top:23px;left:25px;font-size:10px;font-weight:600}
+.card-bottom{color:#a18c98;letter-spacing:1.8px}
+.card-cover{background:radial-gradient(circle at 40% 30%,#fff,#f9e3ee);border-radius:24px}
+.card-cover:before{border-color:#e7cbd9;border-radius:16px}
+.sealed-daily{background:radial-gradient(circle at 50% 30%,#fffaf4,#f5e0e5);min-height:325px;padding:28px 23px;border-radius:17px}
+.sealed-daily>span{display:block;font:86px 'Cormorant Garamond',Georgia,serif;color:var(--rose);text-shadow:0 0 24px #edbdcc;margin-bottom:7px}
+.sealed-daily h2{font:500 29px/1.15 'Cormorant Garamond',Georgia,serif;letter-spacing:-.4px;margin:14px 0 10px;max-width:250px}
+.sealed-daily p{font-size:12px;line-height:1.8;max-width:230px}
+.waiting-discovery:before{border-color:#f3e3ec}
+.daily-status{max-width:318px;margin:0 auto;padding:10px 12px;background:transparent;border:0}
+.daily-status>span{font-size:9px;letter-spacing:1.1px;font-weight:600}
+#countdown{font-size:18px;font-weight:500;letter-spacing:1.5px;margin:8px 0 5px}
+.daily-status small{font-size:10px;line-height:1.6;display:block}
+.primary{border-radius:100px;background:var(--rose);color:#fff;font-size:12px;font-weight:500;letter-spacing:.2px;min-height:50px;min-width:0;width:100%;max-width:318px;padding:16px 18px;margin-top:20px;box-shadow:0 7px 17px #a943701c;transition:box-shadow .18s ease,filter .18s ease}
+.primary:active{filter:brightness(.94);box-shadow:0 3px 9px #a9437018}
+#collection-button{background:#fffaf6dc;color:var(--rose);border:1px solid #e7cbd6;box-shadow:0 4px 12px #9c657508;margin-top:14px}
+#collection-button span{margin-left:20px}
+.collection-count{font-size:11px;margin-top:14px}
+.back{color:var(--muted);font-size:12px;font-weight:500;border-radius:12px;padding:10px 0;min-height:44px}
+#collection .back{margin-bottom:16px}
+.hint{font-size:12px;line-height:1.7;margin:20px auto;color:var(--muted)}
+.gallery{gap:12px;margin:24px 0}
+.tile{border:1px solid #eee5ec;background:#fff;border-radius:18px;padding:12px 10px;box-shadow:0 3px 12px #5c365006}
+.tile-front{gap:7px}
+.tile .thumb{width:44px;height:50px;background:#fcf7fa;border-radius:12px}
+.tile-open{font:500 21px/1.25 'Cormorant Garamond',Georgia,serif;padding:7px 2px;overflow-wrap:anywhere}
+.tile-open small{font-size:8px;line-height:1.65;letter-spacing:.5px;margin-bottom:6px;color:#9c7c90}
+.tile-open .hidden-letter{font-weight:700;color:#b33670;text-shadow:0 0 12px #f2cfe0}
+.handle{color:#c2acb9;min-width:26px;min-height:48px;font-size:20px;padding:0}
+.order-controls{gap:3px}
+.arrow{width:30px;min-width:30px;min-height:34px;background:#faf6f9;border-radius:9px;font-size:13px}
+.tile-letter{border-radius:18px;background:linear-gradient(150deg,#fff,#fff4fa)}
+.secret-layout .tile{padding:0}
+#secret-result{background:#fff9fc;border:1px solid #f1dce8;border-radius:22px;padding:15px}
+#secret-result h2{font-size:clamp(31px,8vw,46px)}
+#detail-card .card-face,#detail-card .card-cover{border-radius:24px;border:1px solid #efe2eb;box-shadow:0 24px 65px #6b3e5925}
+#detail-card .card-face:before{border:1px solid #f1e5ed;border-radius:16px}
+#card-dialog .close{width:46px;height:46px;background:#ffffffed;border:1px solid #efe3eb;box-shadow:0 5px 20px #68425912}
+.memory-photo{border-color:#fff;border-radius:10px;box-shadow:0 8px 30px #62435a18}
+footer{font:italic 400 15px/1.6 'Cormorant Garamond',Georgia,serif;color:#978392;padding-top:30px}
+footer span{font-size:23px;color:#bf8aa2}
+/* Admin sections use the same surfaces and type scale as the recipient view. */
+#admin{background:#fffffff0;border:1px solid #fff;border-radius:26px;padding:24px 20px;margin:0;font-size:12px;line-height:1.8;box-shadow:0 12px 48px #6845590b}
+#admin h2{font-size:25px;letter-spacing:-.8px;margin:0 0 14px}
+#admin h3{font-size:13px;font-weight:600;letter-spacing:0;color:#765368}
+#admin>p{color:var(--muted)}
+.admin-link{font-weight:600;text-decoration:none;color:var(--rose)}
+.admin-latest{background:#fff;border:1px solid #eee3eb;border-radius:20px;padding:18px;box-shadow:none;margin:18px 0}
+.latest-number{display:inline-block;font-size:13px;background:#faedf4;color:var(--rose);padding:5px 10px;border-radius:9px}
+.admin-latest .message{font:500 24px/1.3 'Cormorant Garamond',Georgia,serif;color:var(--ink);margin:12px 0}
+.latest-date{font-size:11px;color:var(--muted)}
+#admin button{border:1px solid #eadce6;border-radius:13px;background:#fff;font-size:12px;font-weight:500;min-height:46px;padding:12px 14px;box-shadow:0 2px 5px #76455d04;color:var(--rose)}
+#admin #save-next,#admin #grant-extra,#admin #force{background:var(--rose);border-color:var(--rose);color:#fff;font-weight:600}
+#admin #reset{color:#a75671;background:#fff9fb}
+.admin-actions{gap:8px}
+.admin-selection{border-color:#eee6ed;margin:22px 0;padding-bottom:18px}
+label{font-size:12px;font-weight:600;color:#765368}
+#admin select,input{background:#faf8fb;border:1px solid #e9dfe7;border-radius:12px;padding:13px 12px;color:var(--ink);min-height:48px;font-weight:400}
+#admin-preview{border-color:#eee6ed;padding-top:20px}
+#admin-gallery{gap:10px}
+#admin .admin-preview-tile{border-radius:16px;padding:10px}
+.admin-preview-tile .tile-open{font:500 20px/1.3 'Cormorant Garamond',Georgia,serif!important;background:transparent!important;box-shadow:none!important;color:var(--ink)!important}
+#admin .latest-discovered{background:#fff7fb;border:1px solid #dca6c0;box-shadow:inset 3px 0 0 #bd6891}
+#admin .assigned-card{background:#fffdf7;border:1px solid #e7d8b3;box-shadow:inset 3px 0 0 #c7a75f}
+#storage-warning{border-top:1px solid #eddfE8;background:#fff}
+@media(min-width:700px){main{padding-top:22px}#daily,#collection{padding:36px 36px 30px}#admin{padding:30px}.gallery:not(.secret-layout){grid-template-columns:1fr}h1{font-size:49px}}
+@media(max-width:350px){main{padding:10px 14px 0}header{padding-right:16px;padding-left:16px}#daily,#collection{padding:24px 14px 20px;border-radius:24px}.header-note{font-size:8px;letter-spacing:1px}.eyebrow{font-size:8px;letter-spacing:.8px}#admin{padding:20px 14px}.tile{padding:10px 7px}.tile-front{gap:5px}.tile .thumb{width:37px}.tile-open{font-size:19px}.handle{min-width:22px}.arrow{min-width:27px;width:27px}}
+@media(prefers-reduced-motion:reduce){.primary{transition:none}}
+
+.waiting-discovery{min-height:325px}
+
+/* Film-inspired lettering, rather than proprietary movie logo fonts. */
+.movie-brave{font-family:'Cinzel',Georgia,serif;font-weight:700;font-size:.78em;letter-spacing:.025em;color:#99603e;text-shadow:0 1px 0 #fff0d5}
+.movie-up{display:inline-block;font-family:'Barlow Condensed','Arial Black',Impact,sans-serif;font-weight:900;font-style:italic;font-size:1.2em;line-height:1;letter-spacing:-.045em;text-transform:uppercase;color:#517b91;text-shadow:1px 2px 0 #d7e7e9}
+.movie-up .hidden-letter{font-family:inherit;font-weight:inherit;font-style:inherit;color:var(--rose);text-shadow:0 0 12px #f0bfd4}

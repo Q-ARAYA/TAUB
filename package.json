@@ -1,0 +1,9 @@
+{
+  "name": "para-ti-taub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  }
+}
